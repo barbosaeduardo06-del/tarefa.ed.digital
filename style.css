@@ -1,13 +1,34 @@
+:root{
+    --cor-fundo: #123f92;
+    --cor-texto: #000000;
+    --cor-principal: #9b0606;
+    --cor-secundaria: #dab615;
+    --cor-hover: #ff00ff;
+    --cor-superficie: white;
+    --cor-card: #f3d9fa;
+    --cor-legenda: #07da5f;
+    --cor-clara: white;
+    --cor-rodape: #222222;
+}
+
+.tema-escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #f5f5f5;
+    --cor-principal: #6703be;
+    --cor-superficie: #1e1e1e;
+    --cor-card: #2b2530;
+}
+
 body {
-    background-color: #f4f1ea;
-    color: #222222;
+    background-color: #faf8f5;
+    color: #08c989;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #3b3b3b;
-    color: white;
+    background-color: #7bc921;
+    color: rgb(0, 241, 149);
     text-align: center;
     padding: 30px;
 }
@@ -17,7 +38,7 @@ h1 {
 }
 
 h2 {
-    color: #8b5a2b;
+    color: #0300b6;
 }
 
 p {
@@ -32,7 +53,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    background-color: #8b5a2b;
+    background-color: #6b0c4f;
     padding: 10px 15px;
     border-radius: 8px;
     margin: 5px;
@@ -40,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #c77d3f;
+    background-color: #c77dff;
 }
 
 main {
@@ -71,10 +92,10 @@ figcaption {
 }
 
 .card {
-    background-color: #f3d9b0;
+    background-color: #f3d9fa;
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid #8b5a2b;
+    border-left: 6px solid #6b2d5c;
     border-radius: 10px;
 }
 
@@ -90,23 +111,44 @@ footer {
     margin-top: 30px;
 }
 
-button:hover {
-    background-color: blueviolet;
+button {
+    background-color: #220d80;
     color: white;
-    border:none;
+    border: none;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-
 }
 
 button:hover {
-    background-color:blueviolet
-
+    background-color: #0a6302;
 }
 
 .curtir {
     display: block;
-    width: it-content;
-    margin: 20px auto;
+    width: fit-content;
+    margin: 2px auto;
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-curiosidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-tema {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22;
 }
